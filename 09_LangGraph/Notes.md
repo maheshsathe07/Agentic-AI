@@ -14,3 +14,8 @@ to every node state has been pass, every node returns a state to pass it to the 
 
 
 conditional edge => if you are at a node based on a certain condition where needs to go.
+
+
+Note: Once application got restart, the previous state will get vanished means llm don't have any context of the previous state then. To solve this issue we need to implement Checkpointing.
+
+Checkpointing: the state of a thread at a particular point in time is called a checkpoint. It is a snapshot of the graph state saved at each super-step.
