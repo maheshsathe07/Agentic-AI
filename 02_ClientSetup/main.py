@@ -22,7 +22,7 @@ client = OpenAI(
 )
 
 response = client.chat.completions.create(
-    model="gemini-2.5-flash",
+    model="gemini-2.5-flash", # llama-3.3-70b-versatile
     n=1,
     messages=[
         {"role": "system", "content": "You are a helpful assistant."},
