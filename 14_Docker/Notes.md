@@ -334,3 +334,7 @@ dr => IP = 172.24.0.4
 
 2. detach a container from network:
 `docker network disconnect milkyway dr`
+
+- to remove a network:
+`docker network rm milkyway`
+but all the containers attached to this network needs to be stopped
